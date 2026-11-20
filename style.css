@@ -161,3 +161,108 @@ header{
     display: flex;
     justify-content: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- footer ---------- */
+footer {
+  background: #e5e1ed;
+  padding: 100px 0;
+  color: #000;
+}
+
+/* every section inside the footer is centered with the same width */
+footer > section {
+  width: 80%;
+  max-width: 1526px;
+  margin: 0 auto;
+}
+
+/* ---------- upper part: title left, icons + button right ---------- */
+#upper-footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#upper-footer-section h2 {
+  margin-top: 0;
+}
+
+#upper-footer-section p {
+  margin: 0;
+}
+
+#footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+#footer-social-icons img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.btn {
+  padding: 18px 30px;
+  font-size: 18px;
+  font-family: inherit;
+  background: #1565f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0e52c9;
+}
+
+/* ---------- horizontal line ---------- */
+#horizontal-line {
+  height: 1px;
+  background: #cfcbd6;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* ---------- footer links: 4 columns in one row ---------- */
+#footer-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+#footer-nav a {
+  display: block;        /* one link per line */
+  margin-bottom: 18px;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- small screens ---------- */
+@media (max-width: 768px) {
+  #upper-footer-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  #footer-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
