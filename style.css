@@ -4,11 +4,10 @@
 }
 
 body{
-    background-color: rgb(229, 201, 201);
+    background-color: rgb(218, 198, 198);
 }
 
 header{
-    border: 2px solid orange ;
     width: 90%;
     margin: 50px auto;
     display: flex;
@@ -27,4 +26,40 @@ header{
     background-color: rgb(9, 9, 99);
     cursor: pointer;
     transition: 0.8s;
+}
+
+#highlights-section{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#highlights-section > h2{
+    font-size: 50px;
+    font-weight: 800;
+     text-shadow: 2px 2px 5px rgb(132, 92, 92);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#highlights-section > p{
+    width: 50%;
+    margin: 50px auto;
+    color: rgb(120, 113, 113);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#buy-now-button{
+    display: flex;
+    justify-content: center;
+}
+
+#cover-image-section{
+    border: 2px solid olivedrab ;
+    width: 70%;
+    margin: 50px auto;
+}
+
+#cover-image-section img {
+    width: 100%;
 }
